@@ -1,0 +1,14 @@
+# Main Dependencies
+ultralytics
+opencv-python==4.8.1.78
+numpy==1.26.4
+# PyTorch stack (needed for training/exporting, though on RPi you might use ONNX only)
+torch
+torchvision
+# Hardware control (Raspberry Pi specific - Install these ONLY on the Pi later)
+# RPi.GPIO
+# pigpio
+# Inference environments
+onnx
+onnxruntime
+tflite-runtime; platform_machine == 'aarch64' or platform_machine == 'armv7l' # specifically for RPi
